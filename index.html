@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="form-heading">Sign Up Form!</h1>
+    </div>
+    <div class="content">
+        <h2 class="description">
+            This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. 
+            <br> Sign up <span class="italicise">now</span> to get started.
+            <br>
+            <br> You <span class="italicise">know</span> you want to.
+        </h2>
+        <form action="form-output/" method="dialog">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                
+                <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="firstName" placeholder="John" required>
+                </div>
+
+                <div class="form-group">
+                <label for="surname">Last Name:</label>
+                <input type="text" id="surname" name="surname" placeholder="Appleseed" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="user@email.com" name="email">
+                </div>
+
+                <div class="form-group">
+                <label for="phone-no">Phone Number:</label>
+                <input type="text" id="phone-no" name="phoneNum" placeholder="0000000000" required>
+                </div>
+
+                <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                <label for="conf-password">Confirm Password:</label>
+                <input type="password" id="conf-password" required>
+                </div>
+                
+                <p class="password-status"></p>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="alt-login">Already have an account? <a href="#">Log in</a></p>
+    </div>
+</body>
+</html>
